@@ -24,6 +24,93 @@ public class QuizActivity extends AppCompatActivity {
         setContentView(R.layout.activity_quiz);
     }
 
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putInt("activeQuestion", activeQuestion);
+        savedInstanceState.putBoolean("checkedAnswer", checkedAnswer);
+    }
+
+    @Override
+    protected void onRestoreInstanceState (Bundle savedInstanceState) {
+        activeQuestion = savedInstanceState.getInt("activeQuestion");
+        checkedAnswer = savedInstanceState.getBoolean("checkedAnswer");
+        TextView question = (TextView) findViewById(R.id.question);
+        RadioButton r1 = (RadioButton) findViewById(R.id.radio1);
+        RadioButton r2 = (RadioButton) findViewById(R.id.radio2);
+        RadioButton r3 = (RadioButton) findViewById(R.id.radio3);
+        RadioGroup rg = (RadioGroup) findViewById(R.id.radiogroup);
+
+        switch(activeQuestion) {
+            case 1:
+                question.setText(getString(R.string.question1));
+                r1.setText(getString(R.string.answer1A));
+                r2.setText(getString(R.string.answer1B));
+                r3.setText(getString(R.string.answer1C));
+                break;
+            case 2:
+                question.setText(getString(R.string.question2));
+                r1.setText(getString(R.string.answer2B));
+                r2.setText(getString(R.string.answer2C));
+                r3.setText(getString(R.string.answer2A));
+                break;
+            case 3:
+                question.setText(getString(R.string.question3));
+                r1.setText(getString(R.string.answer3B));
+                r2.setText(getString(R.string.answer3A));
+                r3.setText(getString(R.string.answer3C));
+                break;
+            case 4:
+                question.setText(getString(R.string.question4));
+                r1.setText(getString(R.string.answer4C));
+                r2.setText(getString(R.string.answer4A));
+                r3.setText(getString(R.string.answer4B));
+                break;
+            case 5:
+                question.setText(getString(R.string.question1));
+                r1.setText(getString(R.string.answer5A));
+                r2.setText(getString(R.string.answer5C));
+                r3.setText(getString(R.string.answer5A));
+                break;
+            case 6:
+                question.setText(getString(R.string.question6));
+                r1.setText(getString(R.string.answer6A));
+                r2.setText(getString(R.string.answer6B));
+                r3.setText(getString(R.string.answer6C));
+                break;
+            case 7:
+                question.setText(getString(R.string.question7));
+                r1.setText(getString(R.string.answer7A));
+                r2.setText(getString(R.string.answer7B));
+                r3.setText(getString(R.string.answer7C));
+                break;
+            case 8:
+                question.setText(getString(R.string.question8));
+                r1.setText(getString(R.string.answer8C));
+                r2.setText(getString(R.string.answer8A));
+                r3.setText(getString(R.string.answer8B));
+                break;
+            case 9:
+                question.setText(getString(R.string.question9));
+                r1.setText(getString(R.string.answer9C));
+                r2.setText(getString(R.string.answer9B));
+                r3.setText(getString(R.string.answer9A));
+                break;
+            case 10:
+                question.setText(getString(R.string.question10));
+                r1.setText(getString(R.string.answer10A));
+                r2.setText(getString(R.string.answer10C));
+                r3.setText(getString(R.string.answer10B));
+                break;
+            default:
+                activeQuestion=1;
+                Intent intent = new Intent(this, MainActivity.class);
+                startActivity(intent);
+                break;
+        }
+    }
+
+
     public void checkAnswer (View v){
         String correctAnswer;
         switch(activeQuestion) {
