@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">GamerQuiz</string>
+
+    <string name="question1">Which part came 2002 after GTA III?</string>
+    <string name="question2">Which team developed games like Neverwinter Nights or Mass Effect?</string>
+    <string name="question3">Who is the protagonist of the first Assassins Creed?</string>
+    <string name="question4">Whats the last name of the protagonist in Mass Effect 1?</string>
+    <string name="question5">Which World of Warcraft Addon came as third?</string>
+    <string name="question6">Which football player can be seen on the cover of Fifa 14?</string>
+    <string name="question7">Which famous writer wrote the novels about the splinter cell series?</string>
+    <string name="question8">Who is the splinter cell game\'s protagonist?</string>
+    <string name="question9">Which god do you NOT fight in God of War III, who dies anyway after a cutscene?</string>
+    <string name="question10">What are the giant robotic people with the drill-arm in Bioshock called?</string>
+
+
+    <string name="answer1A">GTA IV</string>
+    <string name="answer1B">GTA San Andreas</string>
+    <string name="answer1C">GTA Vice City</string>
+
+    <string name="answer2A">DICE</string>
+    <string name="answer2B">Ubisoft</string>
+    <string name="answer2C">BioWare</string>
+
+    <string name="answer3A">Connor</string>
+    <string name="answer3B">Ezio</string>
+    <string name="answer3C">Altair</string>
+
+    <string name="answer4A">Commander Smith</string>
+    <string name="answer4B">Commander Johnson</string>
+    <string name="answer4C">Commander Shepard</string>
+
+    <string name="answer5A">Wrath of the Lich King</string>
+    <string name="answer5B">Mists of Pandaria</string>
+    <string name="answer5C">Cataclysm</string>
+
+    <string name="answer6A">Podolski</string>
+    <string name="answer6B">Ronaldo</string>
+    <string name="answer6C">Messi</string>
+
+    <string name="answer7A">Dan Brown</string>
+    <string name="answer7B">Edgar Allen Poe</string>
+    <string name="answer7C">Tom Clancy</string>
+
+    <string name="answer8A">Master Chief</string>
+    <string name="answer8B">Solid Snake</string>
+    <string name="answer8C">Sam Fisher</string>
+
+    <string name="answer9A">Hades</string>
+    <string name="answer9B">Zeus</string>
+    <string name="answer9C">Hera</string>
+
+    <string name="answer10A">Little Sister</string>
+    <string name="answer10B">Handyman</string>
+    <string name="answer10C">Big Daddy</string>
+
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.gamerquiz.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/app_name"
+        android:textSize="48sp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="casual"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:layout_gravity="fill"
+        android:textSize="18sp"
+        android:layout_weight="1"
+        android:text="This is the Gamer Quiz. \nAnswer all questions correct and get... well nothing.\n But feel great because you have a lot of google-able knowledge ;) \n\nStart with the Button below."
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_margin="48dp"
+        android:layout_height="128dp"
+        android:layout_gravity="center"
+        android:textAllCaps="true"
+        android:text="Start"
+        android:onClick="startQuiz"
+        />
+
+
+
+</LinearLayout>
